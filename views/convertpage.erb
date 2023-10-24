@@ -1,0 +1,15 @@
+<h1>
+  Convert <%=@sym_from%>
+</h1>
+
+Go <a href = '/'>back</a>
+
+<ul>
+  <% @all_curr_sym.each do |curr| %>
+    <li>
+      <a href="/<%=@sym_from%>/<%=curr%>">
+        Convert 1 <%=@sym_from%> to <%= curr %>...
+      </a>
+    </li>
+  <% end %>
+</ul>
